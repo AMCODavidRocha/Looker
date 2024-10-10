@@ -137,3 +137,27 @@
 
 ---
 
+***4. Create Metrics***
+
+* Define key **metrics** using the Kaggle Housing Prices Dataset.
+
+**Task:**
+
+* Create metrics such as:
+
+    * **Average home price:** Calculate the average value of SalePrice.
+
+    * **Total number of homes sold:** Count the total entries in the dataset.
+
+    * **Average living area:** Calculate the average of GrLivArea.
+
+* Add these metrics to a dashboard and document their creation.
+
+    * For this task We need to create a charts per metrics they ask of us. We gonna use the Scorecard chart. In the properties column we just add the field that we want to calculate and pick the function We need, AVG for sales and another chart with AVG too for the area, for the total of sales Looker creat by default a data with the total of rows of each dataset that We add at project named Record count.
+
+    ![1](src/img/17.png)
+
+| **TASK**    | :white_check_mark: |
+| :---        |               ---: |
+
+---
