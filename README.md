@@ -109,3 +109,31 @@
 | :---        |               ---: |
 
 ---
+
+***3. Create Calculated Fields (Kaggle Housing Prices)***
+
+* Create calculated fields based on the Kaggle Housing Prices Dataset.
+
+**Task:**
+
+* Example calculated fields:
+
+    * **Price per square foot:** Create a calculated field that divides the `SalePrice` by the `GrLivArea` (Above ground living area).
+
+    * **Estimated monthly mortgage:** Use a fixed interest rate and loan term to estimate the monthly mortgage payments based on `SalePrice`.
+
+* Document the process for creating these fields and use them in visualizations.
+
+    * For this exercise We need to use a fields that are not include in csv file, so We need to create values using others values, for that We have to choose the "+ Add field" at the bottom of the data column then choose a "add calculated field", Next we put the name of our new data field and in the formula input We put our operation as complex as necessary, either dragging them clicling them or writing them:
+
+    ![1](src/img/15.png)
+
+    ![1](src/img/16.png)
+
+    * For the Estimated monthly mortgage we solve by the same way, just creating anothers field that we can manipulated to have the values we want.
+
+| **TASK**    | :white_check_mark: |
+| :---        |               ---: |
+
+---
+
