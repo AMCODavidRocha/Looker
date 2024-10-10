@@ -48,3 +48,64 @@
 | :---        |               ---: |
 
 ---
+
+***2. Create Blended Data (Austin Bikeshare)***
+
+* Learn how to create blended data by combining data from the **Austin Bikeshare Dataset.**
+
+**Task:**
+
+* Blend the **bikeshare_stations** and **bikeshare_trips** tables from the Austin Bikeshare dataset.
+
+* **Join type:** Use an **inner join** on the `station_id` field to blend the data between the trips and stations.
+
+* Example: Calculate the number of trips per station, and blend this with station data such as the location (latitude, longitude).
+
+* Use this blended data to create visualizations, such as:
+
+    * A bar chart showing the number of trips per station.
+
+    * A map displaying the locations of stations and the number of trips originating from each station.
+
+* Document the process of blending the data and creating the visualizations.
+
+    - For the blend of the tables We going to create de blend from BigQuery bringing us both tables with the requested **inner join**.
+
+    ![1](src/img/6.png)
+
+    - Now, to show the data, first we need to create a Report, like we create a data source but choosing the new report button.
+
+    ![1](src/img/7.png)
+
+    - After click in the new report button, looker will ask us the origin of our data, for this example we gonna choose BigQuery option and repeat the previous task for adding new datasource from BigQuery, all of this using the blend query we create in BigQuery:
+
+    ![1](src/img/8.png)
+
+    - If the project was created correctly, we can saw the button for our data at the right and clicking it will show our field for the query.
+
+    ![1](src/img/9.png)
+
+    - To create a chart We the trips per station, we need to add the chart to the page, in this case We will use a basic table.
+
+    ![1](src/img/10.png)
+
+    - Now, to show data in this table We need to drag some variables to de Dimension section (green background) and this will be the data that we want to show as it is. To form a group with another data we just drag the variable to the metric section (first blue background) and specify the function we want on that metric (sum, max, min, avg, etc.).
+
+    ![1](src/img/11.png)
+
+    -  For this example we just only need the name of the station and the numbre of trips starter on that station, using a metric of SUM, to apply this just click at left of the blue section where the CT is visible and then choose the right metric we want and We can change the name of the column at the first option:
+
+    ![1](src/img/12.png)
+
+    - To make a bar chart We just to add the chart and use the same variables for this case:
+
+    ![1](src/img/13.png)
+
+    - Finally for the map chart, the bikeshare dataset was not including a latitude and longitude datas, then for this case we use another public dataset: `faa.us_airports` wich We use a BigQuery to bring us all the public airpots, name and lattitude and longitude in the New York state, to show where they are and his name. (Important, to show data in a map is strongly recomended that We have to have a field with this format in the value: `POINT(-65.3038783 18.31295177)` to Looker can show it in a easier way on "geospatial field" parameter). Remeber, when we create this project We have to call our data from BigQuery and put it the query previously reviewed in BQ. 
+
+    ![1](src/img/14.png)
+
+| **TASK**    | :white_check_mark: |
+| :---        |               ---: |
+
+---
