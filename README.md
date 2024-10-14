@@ -199,3 +199,33 @@
 
 ---
 
+***6. Use Custom Filters***
+* Apply custom filters to the Kaggle Housing Prices Dataset and the blended Austin Bikeshare data.
+
+**Task:**
+
+* Add filters such as:
+
+    * **Price range:** Allow users to filter by home price (SalePrice).
+
+    * **Living area range:** Filter homes by GrLivArea (above ground living area).
+
+    * **Station name:** Filter by station from the Austin Bikeshare data.
+
+    * **Trip duration:** Filter bikeshare trips by duration (duration_minutes).
+
+* Demonstrate the use of these filters in dashboards and reports.
+
+    - For this task we make a `Input box` for a specific area or greater than and `Slider` for a price range controls, and is to easy like just adding a simple variable to each filter that We want to show. This for the **Housing Prices Dataset.**
+
+    ![1](src/img/23.png)
+
+    - In the case for the `Bikeshare Station names` and `trip duration` the dataset doesnt provide the finish trip date, instead its bring us a `duration_time` data, already in minutes for this task, so the creation of this data would already be implicit in the table.
+
+    ![1](src/img/24.png)
+
+| **TASK**    | :white_check_mark: |
+| :---        |               ---: |
+
+---
+
