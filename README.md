@@ -161,3 +161,41 @@
 | :---        |               ---: |
 
 ---
+
+***5. Customize the Dashboard Canvas and Navigation***
+
+* Customize the layout and appearance of the dashboard.
+
+**Task:**
+
+* Organize charts, tables, and visual elements on the dashboard for clarity.
+
+* Add navigation buttons or filters for switching between views (e.g., by neighborhood, house style).
+
+* Document the customization process and the design choices.
+
+    - We create this look up, adding a logo, rectangles, scorecard, buttons, a table and a pie chart:
+
+    ![1](src/img/18.png)
+
+    - For a estetic elements We just need to select them in just at the right of the `Add a control` button: this elements just need very few configs like, width, height, color, text or in the case of images, the url or path to the file, be careful with the positioning of the layout, example, images and text need to be up rectangles or some stetic element to be displaying more eficient.
+
+    ![1](src/img/19.png)
+
+    - Next, to add some filters to our data tables we need to create an `Add a control` and then `Drop-down list`:
+
+    ![1](src/img/20.png)
+
+    - For this element We need just to add the field that we want to be flitered in  the property of `Control Field`, the rest are options like range, order and style effects.
+
+    ![1](src/img/21.png)
+
+    - For an extra tip, we can group elements to be or not affected by the filteres, for default the filters will apply to al elementes in the sheet, to group elements just drag the cursor and select all elemente Ypu want and the right click over one of them and select `Group`, in thes case the scorecard with the total of personal dont be afected by any of the filters in the sheet.
+
+    ![1](src/img/22.png)
+
+| **TASK**    | :white_check_mark: |
+| :---        |               ---: |
+
+---
+
