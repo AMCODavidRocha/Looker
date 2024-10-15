@@ -229,3 +229,58 @@
 
 ---
 
+7. Use Parameters for Data
+Use parameters in Looker to control data dynamically.
+
+Task:
+
+Create parameters for:
+
+Selecting a time range (e.g., filter homes sold within a certain period or bikeshare trips within a date range).
+
+Choosing a data source (e.g., switch between housing dataset and bikeshare data).
+
+Document the process and how the parameters adjust the displayed data.
+
+---
+
+8. Add Charts, Tables, and Configure Dimensions and Appearance
+Add visual elements such as charts and tables to present the data.
+
+Task:
+
+Add visualizations such as:
+
+Bar chart: Show the average home prices by Neighborhood from the Kaggle dataset.
+
+Line chart: Display the number of bikeshare trips over time in Austin.
+
+Table: List properties with their price, square footage, and the estimated monthly mortgage.
+
+Configure dimensions, filters, and appearance to enhance readability and visual appeal.
+
+Document the configuration and choices made for each visualization.
+
+---
+
+***9. Manage Permissions for Sharing Dashboards and Setting Roles***
+* Set up permissions for sharing the dashboard and assigning roles.
+
+**Task:**
+
+* Share the dashboard with specific users or groups (e.g., team members).
+
+* Assign roles such as Viewer or Editor to control what users can see and modify.
+
+* Document the process of configuring permissions and roles.
+
+    - To share the document with other people we click in the `Share` button behind the `View` blue button and add the people to share the report or We can share with a whole spacework members. At the same members pop up, We found at the right a drop menu with viewer or editor permissions.
+
+    ![1](src/img/25.png)
+
+    ![1](src/img/26.png)
+
+| **TASK**    | :white_check_mark: |
+| :---        |               ---: |
+
+---
