@@ -229,18 +229,33 @@
 
 ---
 
-7. Use Parameters for Data
-Use parameters in Looker to control data dynamically.
+***7. Use Parameters for Data***
+* Use parameters in Looker to control data dynamically.
 
-Task:
+**Task:**
 
-Create parameters for:
+* Create parameters for:
 
-Selecting a time range (e.g., filter homes sold within a certain period or bikeshare trips within a date range).
+    * Selecting a **time range** (e.g., filter homes sold within a certain period or bikeshare trips within a date range).
 
-Choosing a data source (e.g., switch between housing dataset and bikeshare data).
+    * Choosing a **data source** (e.g., switch between housing dataset and bikeshare data).
 
-Document the process and how the parameters adjust the displayed data.
+* Document the process and how the parameters adjust the displayed data.
+
+    - To select a range of dates on a chart, We need the control `Date range control`, then put the date value in the chart to be enabled the control
+        >* **Date range dimension** this field will be the value for the control range
+        >* **Dimension** this field will the axis x
+        >* **Metric** for this the metric will be applied to the dimension
+
+    ![1](src/img/30.png)
+
+    - To choose between datasets in a project We can add a multiples dataset, wwith this action We can put diverse info in a multiples charts in one porject. In the squere We can see that are multiples datasets, each with a bunch of info not realted between they.
+
+    ![1](src/img/31.png)
+
+
+| **TASK**    | :white_check_mark: |
+| :---        |               ---: |
 
 ---
 
