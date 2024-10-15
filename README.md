@@ -249,10 +249,24 @@
 
     ![1](src/img/30.png)
 
-    - To choose between datasets in a project We can add a multiples dataset, wwith this action We can put diverse info in a multiples charts in one porject. In the squere We can see that are multiples datasets, each with a bunch of info not realted between they.
+    - Now, to use a parameters and modify the showing datas, first We need to create a parameter, adding a name, data type, wich type of values We want and for this case a list of values, and finally the default value.
 
     ![1](src/img/31.png)
 
+    - Then we need to add a control and specify that the `Control field` is the new parameter
+
+    ![1](src/img/32.png)
+
+    - Finally We need to create a new field that contains the functions that We need to apply to both, the new parameter and the original value of the dataset, and now, every time we use the control with the parameter, it will affect the created field by applying the necessary form along with the original value of the table.
+
+    ![1](src/img/33.png)
+
+    - Now We can move our control to make the new field obtains the valor via formula with the value of the parameter We are choosing. Here some examples:
+
+    ![1](src/img/34.png)
+    ![1](src/img/35.png)
+    ![1](src/img/36.png)
+    ![1](src/img/37.png)
 
 | **TASK**    | :white_check_mark: |
 | :---        |               ---: |
