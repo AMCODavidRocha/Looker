@@ -244,22 +244,39 @@ Document the process and how the parameters adjust the displayed data.
 
 ---
 
-8. Add Charts, Tables, and Configure Dimensions and Appearance
-Add visual elements such as charts and tables to present the data.
+***8. Add Charts, Tables, and Configure Dimensions and Appearance***
+* Add visual elements such as charts and tables to present the data.***
 
-Task:
+**Task:**
 
-Add visualizations such as:
+* Add visualizations such as:
 
-Bar chart: Show the average home prices by Neighborhood from the Kaggle dataset.
+    * **Bar chart:** Show the average home prices by Neighborhood from the Kaggle dataset.
 
-Line chart: Display the number of bikeshare trips over time in Austin.
+    * **Line chart:** Display the number of bikeshare trips over time in Austin.
 
-Table: List properties with their price, square footage, and the estimated monthly mortgage.
+    * **Table:** List properties with their price, square footage, and the estimated monthly mortgage.
 
-Configure dimensions, filters, and appearance to enhance readability and visual appeal.
+* Configure dimensions, filters, and appearance to enhance readability and visual appeal.
 
-Document the configuration and choices made for each visualization.
+* Document the configuration and choices made for each visualization.
+
+    - For the fist task we agregate a bar chart in the dimension value add the number of bathroms instead of neighborhood, due to the missing neighborhood column and in the metric we put de price value with an AVG filter and in each bar We can see the AVG of all houses per number of bathrooms.
+
+    ![1](src/img/27.png)
+
+    - For the secodn task we add `Time series` chart, and a `Date range control`, for this implementation We need to have a date type value in our dataset and put it in the `Date range dimension` property, the rest we just add a range in the control an in the charte We use the date value and a metric We want, in this case We use the default row counts value.
+
+    ![1](src/img/28.png)
+
+    - For the third task we gonna re use the previous mortage report with interest by year. Remenbered that we can add only dimension or dimensions + metrics and We can create fields based in others appliying operations or a bunch of methods as We need, the values of interests and year-interest was created via Looker and not bringing with the BigQuery query connection.
+
+    ![1](src/img/29.png)
+
+    **Only for the point 8 We not adding stetic layouts**
+
+| **TASK**    | :white_check_mark: |
+| :---        |               ---: |
 
 ---
 
@@ -270,7 +287,7 @@ Document the configuration and choices made for each visualization.
 
 * Share the dashboard with specific users or groups (e.g., team members).
 
-* Assign roles such as Viewer or Editor to control what users can see and modify.
+* Assign roles such as **Viewer** or **Editor** to control what users can see and modify.
 
 * Document the process of configuring permissions and roles.
 
